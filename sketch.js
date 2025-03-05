@@ -39,6 +39,5 @@ function draw() {
   fill(255, 100, 28);
   noStroke();
   ellipse(mouseX, mouseY, 100, 100);
-
 }
  
