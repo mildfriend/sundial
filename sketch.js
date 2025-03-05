@@ -3,7 +3,6 @@ let star
 
 function preload() {
   bgImage = loadImage("assets/computation.png");
-  star = loadImage("assets/star.jpg")
 }
 
 function setup() {
