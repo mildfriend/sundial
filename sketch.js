@@ -1,8 +1,7 @@
 let bgImage;
-let star
 
 function preload() {
-  bgImage = loadImage("assets/computation.png");
+  bgImage = loadImage("https://mildfriend.github.io/sundial/assets/computation.png");
 }
 
 function setup() {
@@ -13,16 +12,16 @@ let lightX = 0;
 let lightY = 0;
 
 function draw() {
-  background(1, 6, 64); // 배경 색상
+  background(1, 6, 64); 
   let centerX = width / 2;
   let centerY = height / 2;
 
   imageMode(CENTER); 
   image(bgImage,centerX, centerY);
 
-  fill(255); // 흰색 텍스트
-  textSize(24); // 글자 크기
-  textAlign(CENTER, TOP); // 가운데 정렬, 상단 정렬
+  fill(255); 
+  textSize(24); 
+  textAlign(CENTER, TOP); 
   text("move your time with mouse curser", width / 2, 20);
 
   lightX = lerp(lightX, mouseX, 0.1);
